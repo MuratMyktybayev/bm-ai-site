@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диагностика бизнеса и внедрение AI решений | BM.AI Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .hero-pattern {
+            background-image: radial-gradient(circle at 20% 20%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                            radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+                            radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.15) 0%, transparent 50%);
+        }
+        .step-number {
+            background: linear-gradient(135deg, #3b82f6, #1e40af);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">BM.AI Management</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Решения</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Преимущества</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Кейсы</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Тарифы</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">FAQ</a>
+                </div>
+                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium">
+                    Контакты
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-900 hero-pattern text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Диагностика бизнеса и внедрение AI решений
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto">
+                    Комплексный анализ бизнеса за 5 дней с разработкой стратегии внедрения AI. 
+                    Выявляем зоны роста и определяем потенциал повышения эффективности.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-blue-100">
+                    <div class="flex items-center">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>5 рабочих дней</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        <span>Системный анализ</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-target mr-2"></i>
+                        <span>Практические решения</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цель и задачи -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Цель и задачи диагностики</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Глубокое изучение вашего бизнеса для определения оптимальных точек внедрения AI решений
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-blue-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Изучение бизнеса</h3>
+                    <p class="text-gray-600">Комплексный анализ текущих процессов и идентификация зон улучшений для максимизации потенциала роста</p>
+                </div>
+                <div class="text-center p-6 bg-green-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Потенциал AI</h3>
+                    <p class="text-gray-600">Определение возможностей повышения эффективности через внедрение AI инструментов и автоматизацию</p>
+                </div>
+                <div class="text-center p-6 bg-purple-50 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">AI грамотность</h3>
+                    <p class="text-gray-600">Разработка программы повышения AI компетенций сотрудников для успешного внедрения решений</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества подхода -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Преимущества нашего подхода</h2>
+                <p class="text-xl text-gray-600">Почему наша методология диагностики эффективнее других</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-sitemap text-blue-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Системный анализ</h3>
+                    </div>
+                    <p class="text-gray-600">Комплексное исследование всех бизнес-процессов с выявлением взаимосвязей и влияний</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-tools text-green-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Проверенные методологии</h3>
+                    </div>
+                    <p class="text-gray-600">Использование 5 Why, Root Cause Analysis, SWOT и других эффективных инструментов анализа</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-cogs text-purple-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Практические AI решения</h3>
+                    </div>
+                    <p class="text-gray-600">Фокус на реальные внедряемые решения, а не абстрактные теоретические концепции</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-tachometer-alt text-red-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Быстрая реализация</h3>
+                    </div>
+                    <p class="text-gray-600">Получение результатов всего за 5 рабочих дней без потери качества анализа</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-bullseye text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Конкретные рекомендации</h3>
+                    </div>
+                    <p class="text-gray-600">Четкие предложения с KPI, сроками реализации и измеримыми результатами</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-chart-bar text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Измеримые результаты</h3>
+                    </div>
+                    <p class="text-gray-600">Все рекомендации подкреплены метриками и способами измерения эффективности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 этапов диагностики -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">5 этапов диагностики</h2>
+                <p class="text-xl text-gray-600">Пошаговый процесс анализа вашего бизнеса</p>
+            </div>
+            <div class="space-y-8">
+                <!-- Этап 1 -->
+                <div class="flex flex-col lg:flex-row items-center bg-blue-50 rounded-2xl p-8">
+                    <div class="step-number w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 lg:mb-0 lg:mr-8 flex-shrink-0">
+                        1
+                    </div>
+                    <div class="flex-1 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Определение цели и периметра диагностики</h3>
+                        <p class="text-blue-600 font-semibold mb-3">Длительность: 0.5 дня</p>
+                        <p class="text-gray-700 mb-4">Фиксация основных целей и задач диагностики, определение периметра и глубины анализа</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Определение ключевых целей: рост эффективности, решение проблем, поддержка изменений</li>
+                            <li>• Установление периметра исследования: функции, направления, процессы</li>
+                            <li>• Согласование ожиданий и результатов</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Этап 2 -->
+                <div class="flex flex-col lg:flex-row-reverse items-center bg-green-50 rounded-2xl p-8">
+                    <div class="step-number w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 lg:mb-0 lg:ml-8 flex-shrink-0" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        2
+                    </div>
+                    <div class="flex-1 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Интервью и сбор информации</h3>
+                        <p class="text-green-600 font-semibold mb-3">Длительность: 1-2 дня</p>
+                        <p class="text-gray-700 mb-4">Проведение интервью с ключевыми сотрудниками и сбор необходимой документации</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Интервью с владельцем бизнеса и топ-менеджментом</li>
+                            <li>• Наблюдение процессов "в поле" при необходимости</li>
+                            <li>• Сбор документации: оргструктура, описание процессов, KPI, планы</li>
+                            <li>• Использование структурированных чек-листов</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Этап 3 -->
+                <div class="flex flex-col lg:flex-row items-center bg-purple-50 rounded-2xl p-8">
+                    <div class="step-number w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 lg:mb-0 lg:mr-8 flex-shrink-0" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                        3
+                    </div>
+                    <div class="flex-1 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Анализ данных и выявление проблем</h3>
+                        <p class="text-purple-600 font-semibold mb-3">Длительность: 1 день</p>
+                        <p class="text-gray-700 mb-4">Структурирование данных, GAP-анализ и определение корреляций</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Сопоставление фактического и целевого состояния</li>
+                            <li>• GAP-анализ разрывов в процессах</li>
+                            <li>• Выявление бутылочных горлышек и зон сопротивления</li>
+                            <li>• Построение карты "проблема → причина → последствия"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Этап 4 -->
+                <div class="flex flex-col lg:flex-row-reverse items-center bg-red-50 rounded-2xl p-8">
+                    <div class="step-number w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 lg:mb-0 lg:ml-8 flex-shrink-0" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                        4
+                    </div>
+                    <div class="flex-1 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Определение причин и приоритизация</h3>
+                        <p class="text-red-600 font-semibold mb-3">Длительность: 1 день</p>
+                        <p class="text-gray-700 mb-4">Анализ корневых причин проблем и создание матрицы приоритетов</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Применение методологий: 5 Why, Root Cause Analysis, диаграмма Исикавы</li>
+                            <li>• Структурирование причин: организационные, поведенческие, процессные</li>
+                            <li>• Оценка важности, рисков и масштаба проблем</li>
+                            <li>• Создание карты приоритетов решения задач</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Этап 5 -->
+                <div class="flex flex-col lg:flex-row items-center bg-yellow-50 rounded-2xl p-8">
+                    <div class="step-number w-20 h-20 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 lg:mb-0 lg:mr-8 flex-shrink-0" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        5
+                    </div>
+                    <div class="flex-1 text-center lg:text-left">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Результаты и выводы диагностики</h3>
+                        <p class="text-yellow-600 font-semibold mb-3">Длительность: 1 день</p>
+                        <p class="text-gray-700 mb-4">Формирование итогового отчета с Roadmap внедрения AI решений</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Создание матрицы зон улучшения по приоритетам</li>
+                            <li>• Roadmap внедрения AI с KPI и сроками</li>
+                            <li>• Подготовка презентации с выводами и рекомендациями</li>
+                            <li>• Разработка программы обучающих семинаров</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Области применения -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Области применения диагностики</h2>
+                <p class="text-xl text-gray-600">Ключевые направления для внедрения AI решений</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-l-4 border-blue-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cogs text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Оптимизация операционных процессов</h3>
+                    </div>
+                    <p class="text-gray-600">Выявление неэффективных операций и возможностей их автоматизации для повышения производительности</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-l-4 border-green-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-green-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Автоматизация рутинных задач</h3>
+                    </div>
+                    <p class="text-gray-600">Идентификация повторяющихся операций для освобождения человеческих ресурсов для стратегических задач</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-l-4 border-purple-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-users text-purple-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Улучшение клиентского сервиса</h3>
+                    </div>
+                    <p class="text-gray-600">Анализ клиентского опыта и внедрение AI для персонализации и ускорения обслуживания</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-l-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-red-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Повышение эффективности продаж</h3>
+                    </div>
+                    <p class="text-gray-600">Оптимизация воронки продаж, прогнозирование спроса и автоматизация CRM процессов</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-l-4 border-yellow-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-user-tie text-yellow-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Оптимизация управления персоналом</h3>
+                    </div>
+                    <p class="text-gray-600">Автоматизация HR процессов, анализ производительности и прогнозирование кадровых потребностей</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-l-4 border-indigo-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database text-indigo-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Анализ данных и прогнозирование</h3>
+                    </div>
+                    <p class="text-gray-600">Извлечение инсайтов из больших данных, предиктивная аналитика и поддержка принятия решений</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Что получает клиент -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Что получает клиент</h2>
+                <p class="text-xl text-gray-600">Конкретные результаты и материалы по итогам диагностики</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-file-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Детальный отчет с выводами</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                            <span>Перечень выявленных проблем и их анализ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                            <span>Корневые причины идентифицированных проблем</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                            <span>Презентация с выводами и предложениями</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-road text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Roadmap внедрения AI решений</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Пошаговый план внедрения с четкими сроками</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Контрольные KPI для измерения эффективности</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Требуемые ресурсы для реализации</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-th text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Матрица зон улучшения</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                            <span>Приоритизация по степени важности и срочности</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                            <span>Оценка потенциального эффекта от внедрения</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mr-3 mt-1"></i>
+                            <span>Анализ связанных рисков и возможностей</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-yellow-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-yellow-600 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Программа обучения сотрудников</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-600 mr-3 mt-1"></i>
+                            <span>Обучающие тренинги по повышению AI грамотности</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-600 mr-3 mt-1"></i>
+                            <span>Практические воркшопы по AI инструментам</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-600 mr-3 mt-1"></i>
+                            <span>Индивидуальные рекомендации по развитию</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Типовые результаты -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Типовые результаты диагностики</h2>
+                <p class="text-xl text-gray-600">Конкретные достижения, которых добиваются наши клиенты</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-search-minus text-red-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Выявление узких мест</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">Точная идентификация бутылочных горлышек в бизнес-процессах, которые замедляют развитие компании</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-piggy-bank text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Потенциал экономии</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">Расчет возможной экономии времени и ресурсов при оптимизации выявленных процессов</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-route text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Roadmap с приоритетами</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">Четкий план внедрения AI решений с определением первоочередных и долгосрочных задач</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-balance-scale text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Матрица рисков</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">Анализ потенциальных рисков и возможностей с рекомендациями по их управлению</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-user-graduate text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">План развития компетенций</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">Индивидуальная программа повышения AI грамотности для ключевых сотрудников компании</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-trophy text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Измеримые KPI</h3>
+                    </div>
+                    <p class="text-gray-600 text-center">Конкретные показатели эффективности для контроля результатов внедрения AI решений</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сценарии развития -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Возможные сценарии дальнейшего развития</h2>
+                <p class="text-xl text-gray-600">Варианты продолжения сотрудничества после диагностики</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-blue-50 rounded-2xl card-hover">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chalkboard text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Обучающие семинары</h3>
+                    <p class="text-gray-600 mb-6">Проведение практических семинаров по AI решениям для сотрудников в привязке к результатам диагностики</p>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left">
+                        <li>• Тренинги по AI грамотности</li>
+                        <li>• Воркшопы по конкретным инструментам</li>
+                        <li>• Практические кейсы из вашего бизнеса</li>
+                    </ul>
+                </div>
+                <div class="text-center p-8 bg-green-50 rounded-2xl card-hover">
+                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Реализация проектов</h3>
+                    <p class="text-gray-600 mb-6">Заключение договора на внедрение AI инструментов и решений согласно разработанному Roadmap</p>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left">
+                        <li>• Пошаговое внедрение AI решений</li>
+                        <li>• Техническая поддержка процесса</li>
+                        <li>• Контроль достижения KPI</li>
+                    </ul>
+                </div>
+                <div class="text-center p-8 bg-purple-50 rounded-2xl card-hover">
+                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Комплексный подход</h3>
+                    <p class="text-gray-600 mb-6">Сочетание образовательной программы с параллельным внедрением AI решений для максимального эффекта</p>
+                    <ul class="text-sm text-gray-600 space-y-2 text-left">
+                        <li>• Обучение + внедрение одновременно</li>
+                        <li>• Постоянное сопровождение</li>
+                        <li>• Адаптация стратегии по ходу</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ключевые характеристики -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Ключевые характеристики диагностики</h2>
+                <p class="text-xl text-gray-300">Основные параметры нашей услуги</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">5 дней</h3>
+                    <p class="text-gray-300">Срок реализации полной диагностики</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microscope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">360°</h3>
+                    <p class="text-gray-300">Комплексный анализ всех бизнес-процессов</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">AI-фокус</h3>
+                    <p class="text-gray-300">Специализация на внедрении AI решений</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-bar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">ROI</h3>
+                    <p class="text-gray-300">Измеримые результаты и KPI</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <div class="bg-gray-800 rounded-2xl p-8 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Экспертный подход к цифровой трансформации</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Наша диагностика - это не просто аудит бизнеса, а комплексная оценка готовности компании к внедрению AI технологий. 
+                        Мы помогаем не только выявить проблемы, но и определить оптимальные точки приложения AI для достижения максимального эффекта 
+                        с минимальными рисками и затратами.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold mb-2">BM.AI Management</h3>
+            <p class="text-gray-400 mb-4">Уменьшите рутину. Увеличьте результат. С помощью AI.</p>
+            <p class="text-sm text-gray-500">© 2024 BM.AI Management. Диагностика бизнеса и внедрение AI решений.</p>
+        </div>
+    </footer>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDrR%2BaJpJbjyO%2FPOPyZ1Kvj9zzNchk6QdWiCvkt4AjOarir5p0h6IKvfN9yvUO864fxfSBDnIBv%2BscRk%2Btp9gPT2Towmqc%2Fh9myUI2us71dhB2m4KelWkydLiHEGHIVPq6IccMYa4lpZOccx5g5Ra6rs8gcwIQKbGeluRB95%2BgxMPI7zADRiFQnoFjIk0CYfT3oQNr%2F32ydnyw8qkI%2FfDXL4Xgu7FmBV%2Bl%2Bz%2BEVzO6Ewzs4X051%2BKLODi3%2B%2F2EFgS7WDACnSaW8YQm1ex3%2Bk6G8ik1N9XFmij%2BPpcaABMD7n5h84mJUmXzIqXpEYCJwzEpJdF%2B8LKKwl4E2C7VmA8JeMxCS%2FFLX0qWPrYb82DvVFSNZursxKp4%2BR0y1LXwNe%2BY0vGf9XMZ5kagbusKKmF5EAR8eHbGIUleFiPVWvmAbVIhY2vDBBUUy7FfiXtQEc8jA87jZ5x6cj4y55Y%2FMG0pgHga%2FJIkCoHLrkOJtfNotQDYsbmnQXjK5xUmV2oSVZ3nkNZvee3yE2E1TV4w85nokg%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDrR+aJpJbjyO/POPyZ1Kvj9zzNchk6QdWiCvkt4AjOarir5p0h6IKvfN9yvUO864fxfSBDnIBv+scRk+tp9gPT2Towmqc/h9myUI2us71dhB2m4KelWkydLiHEGHIVPq6IccMYa4lpZOccx5g5Ra6rs8gcwIQKbGeluRB95+gxMPI7zADRiFQnoFjIk0CYfT3oQNr/32ydnyw8qkI/fDXL4Xgu7FmBV+l+z+EVzO6Ewzs4X051+KLODi3+/2EFgS7WDACnSaW8YQm1ex3+k6G8ik1N9XFmij+PpcaABMD7n5h84mJUmXzIqXpEYCJwzEpJdF+8LKKwl4E2C7VmA8JeMxCS/FLX0qWPrYb82DvVFSNZursxKp4+R0y1LXwNe+Y0vGf9XMZ5kagbusKKmF5EAR8eHbGIUleFiPVWvmAbVIhY2vDBBUUy7FfiXtQEc8jA87jZ5x6cj4y55Y/MG0pgHga/JIkCoHLrkOJtfNotQDYsbmnQXjK5xUmV2oSVZ3nkNZvee3yE2E1TV4w85nokg=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
