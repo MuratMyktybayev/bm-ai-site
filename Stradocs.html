@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка стратегии с AI: От документов к результатам</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-shadow { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .stat-card { transition: transform 0.3s ease; }
+        .stat-card:hover { transform: translateY(-5px); }
+        .section-divider { background: linear-gradient(90deg, #667eea, #764ba2); height: 3px; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <i class="fas fa-brain text-6xl mb-4 opacity-90"></i>
+            </div>
+            <h1 class="text-5xl font-bold mb-6">Разработка стратегических документов и бизнес-планов с AI</h1>
+            <p class="text-xl opacity-90 max-w-4xl mx-auto leading-relaxed">
+                Профессиональная разработка стратегий, бизнес-планов и программ трансформации с использованием AI-технологий. 
+                От анализа до готовых документов — быстро, точно, результативно.
+            </p>
+        </div>
+    </header>
+
+    <!-- Problem Statement -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Почему стратегия критически важна?</h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+                    В условиях изменяющихся рыночных условий и высокой конкуренции наличие проработанной стратегии, 
+                    бизнес-плана и программы трансформации — это не роскошь, а необходимость.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-eye text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Ясное видение</h3>
+                    <p class="text-gray-600">Формулирование четкого видения будущего и стратегических приоритетов</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-cogs text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Операционная эффективность</h3>
+                    <p class="text-gray-600">Повышение эффективности и согласованности действий всех подразделений</p>
+                </div>
+                <div class="bg-purple-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-shield-alt text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Снижение рисков</h3>
+                    <p class="text-gray-600">Обеспечение дисциплины исполнения и снижение операционных рисков</p>
+                </div>
+                <div class="bg-orange-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-chart-line text-4xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Лучший ROI</h3>
+                    <p class="text-gray-600">Повышение результативности инвестиций и возврата на капитал</p>
+                </div>
+                <div class="bg-indigo-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-sync-alt text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Быстрая адаптация</h3>
+                    <p class="text-gray-600">Способность быстро адаптироваться к изменениям рынка</p>
+                </div>
+                <div class="bg-teal-50 p-8 rounded-xl text-center">
+                    <i class="fas fa-bullseye text-4xl text-teal-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Использование возможностей</h3>
+                    <p class="text-gray-600">Эффективное использование рыночных возможностей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Статистика эффективности</h2>
+                <p class="text-lg text-gray-600">По данным ведущих консалтинговых и исследовательских компаний</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl text-center card-shadow stat-card">
+                    <div class="text-5xl font-bold text-blue-600 mb-4">2.4x</div>
+                    <h3 class="text-lg font-semibold mb-2">Рост выручки</h3>
+                    <p class="text-gray-600 text-sm">Компании с четкой стратегией чаще добиваются роста выше рыночного</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl text-center card-shadow stat-card">
+                    <div class="text-5xl font-bold text-green-600 mb-4">30%</div>
+                    <h3 class="text-lg font-semibold mb-2">Быстрее рост</h3>
+                    <p class="text-gray-600 text-sm">Организации с бизнес-планом растут быстрее конкурентов</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl text-center card-shadow stat-card">
+                    <div class="text-5xl font-bold text-purple-600 mb-4">70%</div>
+                    <h3 class="text-lg font-semibold mb-2">Достижение KPI</h3>
+                    <p class="text-gray-600 text-sm">Компании с формализованными планами достигают заявленных показателей</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl text-center card-shadow stat-card">
+                    <div class="text-5xl font-bold text-orange-600 mb-4">50%</div>
+                    <h3 class="text-lg font-semibold mb-2">Рост эффективности</h3>
+                    <p class="text-gray-600 text-sm">Программы трансформации с AI обеспечивают прирост до 50%</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white p-8 rounded-xl card-shadow">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Исследование 11,000+ компаний</h3>
+                    <p class="text-gray-600">71% быстрорастущих компаний имеют стратегические планы развития</p>
+                </div>
+                <div style="height: 400px;">
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Наши услуги</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Мы берем на себя полную ответственность за результат: от анализа текущей ситуации 
+                    до подготовки финального комплекта документов
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+                    <div class="bg-blue-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-route text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Разработка стратегии</h3>
+                    <p class="text-gray-700 mb-4">Общая, цифровая, производственная, HR-стратегии, отражающие цели и реальности вашей компании</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Стратегические приоритеты</li>
+                        <li>• Дорожные карты</li>
+                        <li>• KPI и метрики</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl">
+                    <div class="bg-green-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-pie text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Бизнес-планы</h3>
+                    <p class="text-gray-700 mb-4">Полные бизнес-планы с обоснованием инвестиций, прогнозами и анализом рисков</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Финансовые модели</li>
+                        <li>• Сценарии развития</li>
+                        <li>• Сроки окупаемости</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl">
+                    <div class="bg-purple-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-sync text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Программы трансформации</h3>
+                    <p class="text-gray-700 mb-4">Дорожные карты внедрения изменений, согласованные с логикой организации</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Этапы внедрения</li>
+                        <li>• Управление изменениями</li>
+                        <li>• Контроль выполнения</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl">
+                    <div class="bg-orange-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-presentation text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Презентации</h3>
+                    <p class="text-gray-700 mb-4">Профессиональные презентации для акционеров, инвесторов и партнеров</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Инвестиционные предложения</li>
+                        <li>• Отчеты для акционеров</li>
+                        <li>• Стратегические презентации</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-xl">
+                    <div class="bg-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-contract text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Система регламентов</h3>
+                    <p class="text-gray-700 mb-4">Единая система, устраняющая человеческий фактор и зависимость от отдельных людей</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Бизнес-процессы</li>
+                        <li>• Политики и процедуры</li>
+                        <li>• Контрольные механизмы</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-xl">
+                    <div class="bg-teal-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI-интеграция</h3>
+                    <p class="text-gray-700 mb-4">Внедрение AI-технологий для автоматизации и повышения эффективности</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Автоматизация процессов</li>
+                        <li>• Аналитика и прогнозы</li>
+                        <li>• Оптимизация решений</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Преимущества нашего подхода</h2>
+                <p class="text-lg text-gray-600">Наша экспертиза позволяет значительно ускорить процессы и повысить качество</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl card-shadow">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Скорость и эффективность</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-clock text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Ускорение согласований</div>
+                                <div class="text-gray-600 text-sm">В 2-3 раза быстрее стандартных процессов</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-edit text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Меньше доработок</div>
+                                <div class="text-gray-600 text-sm">На 60% снижение правок от топ-менеджмента</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-users text-purple-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Повышение вовлеченности</div>
+                                <div class="text-gray-600 text-sm">+30% эффективности совещаний</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl card-shadow">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Качество и точность</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-orange-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-bullseye text-orange-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Точность прогнозов</div>
+                                <div class="text-gray-600 text-sm">До 85% точности планирования</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-teal-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-sync text-teal-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Основа для изменений</div>
+                                <div class="text-gray-600 text-sm">В 7 из 10 случаев документы становятся базой трансформации</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-cogs text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Системный подход</div>
+                                <div class="text-gray-600 text-sm">Согласованность между стратегией и операциями</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Конкретные результаты</h2>
+                <p class="text-lg text-gray-600">Измеримые улучшения для вашего бизнеса</p>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white mb-12">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-5xl font-bold mb-2">50-70%</div>
+                        <div class="text-lg">Сокращение сроков подготовки стратегических документов</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold mb-2">60%</div>
+                        <div class="text-lg">Снижение количества доработок от топ-менеджмента</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold mb-2">2-3x</div>
+                        <div class="text-lg">Ускорение согласования решений</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6">Процессы "До"</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Нехватка времени</div>
+                                <div class="text-gray-600 text-sm">Руководители перегружены операционными задачами</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Отсутствие методологии</div>
+                                <div class="text-gray-600 text-sm">Споры о подходах и методах разработки</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Проектирование "вслепую"</div>
+                                <div class="text-gray-600 text-sm">Потери времени на пробные решения</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6">Результаты "После"</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Методологическая точность</div>
+                                <div class="text-gray-600 text-sm">Проработанная документация и данные</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Системный взгляд</div>
+                                <div class="text-gray-600 text-sm">Понимание бизнес-логики и контекста</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Готовые документы</div>
+                                <div class="text-gray-600 text-sm">От идей к стратегии, от документов к действиям</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Готовы трансформировать свой бизнес?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Мы работаем быстро, системно и на языке бизнеса. Превратим ваши идеи в стратегию, 
+                документы — в действия, а действия — в результаты.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <div class="bg-white text-gray-800 px-8 py-4 rounded-lg font-semibold flex items-center">
+                    <i class="fas fa-rocket mr-3"></i>
+                    Быстрый старт проекта
+                </div>
+                <div class="bg-white text-gray-800 px-8 py-4 rounded-lg font-semibold flex items-center">
+                    <i class="fas fa-shield-alt mr-3"></i>
+                    Полная ответственность за результат
+                </div>
+                <div class="bg-white text-gray-800 px-8 py-4 rounded-lg font-semibold flex items-center">
+                    <i class="fas fa-chart-line mr-3"></i>
+                    Измеримые улучшения
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <p class="text-gray-400 mb-4">
+                    Профессиональная разработка стратегических документов с использованием AI-технологий
+                </p>
+                <div class="flex justify-center space-x-6 text-sm">
+                    <span>Стратегии</span>
+                    <span>•</span>
+                    <span>Бизнес-планы</span>
+                    <span>•</span>
+                    <span>Трансформация</span>
+                    <span>•</span>
+                    <span>AI-интеграция</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Growth Chart
+        const ctx = document.getElementById('growthChart').getContext('2d');
+        const growthChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Компании со стратегией', 'Компании без стратегии'],
+                datasets: [{
+                    data: [71, 29],
+                    backgroundColor: ['#667eea', '#e2e8f0'],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDgQju7KZl%2FtMWGZh6NvKQvWe%2FAoi099C%2BLzZpvDxLXHWbtM3jyN7Slt%2BDNsmDW%2BXZ7cPeZsmoAwt7K4g7D%2BnzIRY03Rkr%2F3jCfg81KsQ2QsSX0AVheoSrO8IfRVKpGuju7nr3x0Wm5lTDLKy%2Fs%2BJiwgUm4w5IROt57JMVrhr4tcOigTASwX86f5L3hPf9D7wl1%2BmOweaaorNJahgbGAEnar5TGblF1YDYV8xml5n6%2FWOtTKAp4pk3NpHSX5%2F6Tt2QPhk7WBLq4ReCrX6cQqKjvDnGZ743NU0IfOCMOr3fbJHRFnE5QiIxaDwty%2Fita5UFjl6OZlFRHlhkkVcShXKzgw5colfzjcE8iCxdNpZyTg%2BFGSn9tB4dyFKBgeRa3iRX71GFpBtgBPs0LiF2dpOmpJjMtOIpqeZ91CIAFlRXukxFU10S6o3hxdMPByeg2LyqY5yyaFOukMPSz05MQsitafunSwqh2StrEmKGguMbszv%2FLqNsfvIDQLlJYUbusQKUA%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDgQju7KZl/tMWGZh6NvKQvWe/Aoi099C+LzZpvDxLXHWbtM3jyN7Slt+DNsmDW+XZ7cPeZsmoAwt7K4g7D+nzIRY03Rkr/3jCfg81KsQ2QsSX0AVheoSrO8IfRVKpGuju7nr3x0Wm5lTDLKy/s+JiwgUm4w5IROt57JMVrhr4tcOigTASwX86f5L3hPf9D7wl1+mOweaaorNJahgbGAEnar5TGblF1YDYV8xml5n6/WOtTKAp4pk3NpHSX5/6Tt2QPhk7WBLq4ReCrX6cQqKjvDnGZ743NU0IfOCMOr3fbJHRFnE5QiIxaDwty/ita5UFjl6OZlFRHlhkkVcShXKzgw5colfzjcE8iCxdNpZyTg+FGSn9tB4dyFKBgeRa3iRX71GFpBtgBPs0LiF2dpOmpJjMtOIpqeZ91CIAFlRXukxFU10S6o3hxdMPByeg2LyqY5yyaFOukMPSz05MQsitafunSwqh2StrEmKGguMbszv/LqNsfvIDQLlJYUbusQKUA==";
+    </script>
+    
+        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
+        
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
