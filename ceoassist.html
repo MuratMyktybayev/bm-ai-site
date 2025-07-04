@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Помощник Руководителя - Assists for Leaders</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .level-card {
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s ease;
+        }
+        .level-card:hover {
+            border-left-color: #1e40af;
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center py-4">
+                <div class="text-2xl font-bold text-blue-800">BM.AI Management</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-6">Assists for Leaders</h1>
+                <h2 class="text-2xl font-light mb-4">AI для принятия управленческих решений</h2>
+                <p class="text-xl mb-8 max-w-4xl mx-auto opacity-90">
+                    Цифровой советник, встроенный в ваш стиль управления. Вместо того чтобы тратить часы на подготовку — вы получаете ясность и готовность за минуты.
+                </p>
+                <p class="text-lg mb-12 max-w-3xl mx-auto opacity-80">
+                    Это не бот — это инструмент, который помогает думать, готовиться, анализировать и решать. Собирает аргументы, выявляет риски, предлагает сценарии и помогает сформулировать сильную позицию.
+                </p>
+                <a href="#solutions" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Узнать больше
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Solutions -->
+    <section id="solutions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Решения для каждого типа руководителя</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Перегруженные руководители -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Для перегруженных руководителей</h3>
+                        <p class="text-blue-600 font-semibold">«Ассистент, который работает 24/7 — без отпусков»</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Сам готовит вопросы к совещаниям</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Помогает проанализировать отчёты</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Аргументирует решения</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Всё в одном окне</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Управленцы без времени -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bolt text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Для управленцев без времени</h3>
+                        <p class="text-green-600 font-semibold">«Используйте с первого дня — без обучения»</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Настраиваем ассистента "под руку"</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Знает ваш стиль, нагрузку и цели</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Как персональный помощник</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Работает сразу после настройки</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Топ-менеджеры -->
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-brain text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Для топ-менеджеров</h3>
+                        <p class="text-purple-600 font-semibold">«Инструмент, который усиливает мышление»</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Сравнивает сценарии и предлагает риски</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Структурирует аргументацию</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Помогает не упустить главное</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Решения — ваша зона ответственности</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs to be Done -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Какие задачи решает AI-ассистент</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Функциональные задачи -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cogs text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Функциональные задачи</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mt-1 mr-3 text-sm"></i>
+                            <span>Подготовка к решениям быстрее и глубже</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mt-1 mr-3 text-sm"></i>
+                            <span>Структурирование совещаний: повестка, аргументы, сценарии</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mt-1 mr-3 text-sm"></i>
+                            <span>Интерпретация отчётности и выявление отклонений</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mt-1 mr-3 text-sm"></i>
+                            <span>Создание убедительных материалов для согласований</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mt-1 mr-3 text-sm"></i>
+                            <span>Сравнение вариантов на основе логики, а не интуиции</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Социальные задачи -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Социальные задачи</h3>
+                    </div>
+                    <ul class="space-y-6 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-green-500 mt-1 mr-3"></i>
+                            <span>Выглядеть как структурный и подготовленный лидер</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-green-500 mt-1 mr-3"></i>
+                            <span>Демонстрировать AI как стратегический инструмент</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Эмоциональные задачи -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heart text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Эмоциональные задачи</h3>
+                    </div>
+                    <ul class="space-y-6 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-shield-alt text-purple-500 mt-1 mr-3"></i>
+                            <span>Снижение тревожности от ответственности за решения</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-shield-alt text-purple-500 mt-1 mr-3"></i>
+                            <span>Повышение уверенности и контроля над ситуацией</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Levels -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Уровни внедрения</h2>
+            
+            <div class="space-y-8">
+                <!-- Базовый уровень -->
+                <div class="level-card bg-gray-50 rounded-xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Базовый уровень</h3>
+                    </div>
+                    <p class="text-lg text-gray-600 ml-16">
+                        Снижение когнитивной и временной нагрузки при принятии решений
+                    </p>
+                </div>
+
+                <!-- Ожидаемый уровень -->
+                <div class="level-card bg-gray-50 rounded-xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Ожидаемый уровень</h3>
+                    </div>
+                    <div class="ml-16">
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Персонализированный ассистент</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Чек-листы требований к решениям</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Подготовка совещаний, интерпретация отчётности</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Улучшенный уровень -->
+                <div class="level-card bg-gray-50 rounded-xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Улучшенный уровень</h3>
+                    </div>
+                    <div class="ml-16">
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Конструктор решений</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Таймблокинг в принятии решений</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span class="text-gray-600">Шаблоны согласования и аргументации</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Потенциальный уровень -->
+                <div class="level-card bg-gray-50 rounded-xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">4</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Потенциальный уровень</h3>
+                    </div>
+                    <div class="ml-16">
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Анонимная обратная связь по качеству решений</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Интеграция с корпоративными системами</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-500 mr-2"></i>
+                                <span class="text-gray-600">Настраиваемая логика под культуру компании</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-6">Готовы усилить свое управленческое мышление?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Получите персональную настройку AI-ассистента под ваш стиль управления, задачи и цели. 
+                Начните использовать с первого дня — без обучения.
+            </p>
+            <a href="#" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
+                <i class="fas fa-rocket mr-2"></i>
+                Получить персональную настройку ассистента
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-2xl font-bold mb-4">BM.AI Management</div>
+                <p class="text-gray-400 mb-6">Уменьшите рутину. Увеличьте результат. С помощью AI.</p>
+                <p class="text-sm text-gray-500">
+                    © 2024 BM.AI Management. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDjDzy2A4hnxXYvJpHcjRHDfVyT63A2zCFGAoyYVJolL3SFbjactLlI92Rtx%2Bw%2F4QFwcMQE4bobSXBCSLZXCHY3y3QUwVcftVUxeqWIIwdbLYd6gd9wk29RCuqU5sOoejnoXKVn5%2FELM2kz5Vhfg20PEwGfJL%2B%2FXEuA9ZSIqvNorW9A03X2RW1Lcg%2BcDhHpVA4YkT7Brmxkg52E0R50cMVlOiv1Q5zaotWhiexY9Pe%2FT0ThBk5SPGidalzrQ31%2B3zTVOn3vRZCFovIsCNLTsWz2Om84rtQbFroZOQB6lQyTdK2Rfy5XoGbgqgQf5yAsJRZD%2BuleXCo1EYtlX%2F8VTTCWklH2bEobjxLzJFK5Q25xiPJ7u4BlQsoMaW4bD4zr7sr1MfZsk5V%2Fzp9Sh3X3OtVx7skeZRtq9zdcJ7j6%2Ffrs2atRLLpf1QDwbYROpYSSAcqtR757dO3MdAZkyLKf2c1Ry76nSeOh0UCe3uroI1hyeaUd1VSq0f42Pryjs%2FCH03dw%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDjDzy2A4hnxXYvJpHcjRHDfVyT63A2zCFGAoyYVJolL3SFbjactLlI92Rtx+w/4QFwcMQE4bobSXBCSLZXCHY3y3QUwVcftVUxeqWIIwdbLYd6gd9wk29RCuqU5sOoejnoXKVn5/ELM2kz5Vhfg20PEwGfJL+/XEuA9ZSIqvNorW9A03X2RW1Lcg+cDhHpVA4YkT7Brmxkg52E0R50cMVlOiv1Q5zaotWhiexY9Pe/T0ThBk5SPGidalzrQ31+3zTVOn3vRZCFovIsCNLTsWz2Om84rtQbFroZOQB6lQyTdK2Rfy5XoGbgqgQf5yAsJRZD+uleXCo1EYtlX/8VTTCWklH2bEobjxLzJFK5Q25xiPJ7u4BlQsoMaW4bD4zr7sr1MfZsk5V/zp9Sh3X3OtVx7skeZRtq9zdcJ7j6/frs2atRLLpf1QDwbYROpYSSAcqtR757dO3MdAZkyLKf2c1Ry76nSeOh0UCe3uroI1hyeaUd1VSq0f42Pryjs/CH03dw==";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
