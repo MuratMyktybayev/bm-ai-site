@@ -1,0 +1,957 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Ассистенты: Революция Эффективности для Руководителей</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .section-divider { background: linear-gradient(90deg, transparent, #e5e7eb, transparent); height: 1px; margin: 4rem 0; }
+        .stat-number { font-size: 4rem; font-weight: 800; line-height: 1; }
+        .timeline-item { position: relative; padding-left: 2rem; }
+        .timeline-item::before { content: ''; position: absolute; left: 0; top: 0.5rem; width: 1rem; height: 1rem; background: #667eea; border-radius: 50%; }
+        .tech-stack { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- Header -->
+<header class="gradient-bg text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+        <div class="text-sm font-medium mb-4">2025</div>
+        <h1 class="text-6xl font-bold mb-6">AI-Ассистенты: Революция Эффективности</h1>
+        <p class="text-2xl mb-4">Трансформируй рутину в стратегическое мышление!</p>
+        <p class="text-xl mb-6">От данных к решениям — мгновенно</p>
+        <div class="inline-flex items-center bg-white bg-opacity-20 rounded-full px-8 py-3">
+            <i class="fas fa-rocket mr-3"></i>
+            <span class="text-lg font-semibold">12 практических сценариев для современного руководителя</span>
+        </div>
+    </div>
+</header>
+
+<!-- Problem Statement -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Где тонет время руководителей?</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center">
+                <div class="stat-number text-red-500 mb-4">80%</div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">времени уходит на рутину</h3>
+                <div class="bg-red-50 p-6 rounded-lg">
+                    <p class="text-gray-700 text-lg">Сбор данных, отчеты, совещания, согласования, поиск информации</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <div class="stat-number text-blue-500 mb-4">20%</div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">остается на стратегию</h3>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <p class="text-gray-700 text-lg">Анализ, принятие решений, инновации, развитие команды</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-6 inline-block rounded">
+                <p class="text-xl font-semibold text-gray-800">
+                    <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                    Руководители тратят 4 дня из 5 на задачи, которые можно автоматизировать
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI Solutions -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">AI как инструмент эффективности</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-robot text-blue-500 mr-3"></i>
+                    AI берёт на себя:
+                </h3>
+                <ul class="space-y-3 text-lg text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Сбор и обработка данных из разных систем</li>
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Подготовка отчётов и аналитических материалов</li>
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Поиск аномалий и отклонений в показателях</li>
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mr-3 mt-1"></i>Ответы на типовые запросы сотрудников</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-user-tie text-purple-500 mr-3"></i>
+                    Руководитель фокусируется на:
+                </h3>
+                <ul class="space-y-3 text-lg text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-star text-purple-500 mr-3 mt-1"></i>Стратегическом планировании и развитии</li>
+                    <li class="flex items-start"><i class="fas fa-star text-purple-500 mr-3 mt-1"></i>Принятии ключевых управленческих решений</li>
+                    <li class="flex items-start"><i class="fas fa-star text-purple-500 mr-3 mt-1"></i>Развитии команды и инновационных проектах</li>
+                    <li class="flex items-start"><i class="fas fa-star text-purple-500 mr-3 mt-1"></i>Создании долгосрочной ценности для бизнеса</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white p-8 rounded-lg shadow-lg inline-block">
+                <h3 class="text-2xl font-bold mb-4">Трансформация распределения рабочего времени</h3>
+                <p class="text-xl">До 40% прироста в продуктивности за счет перераспределения фокуса внимания</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 12 Scenarios Overview -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">12 практических AI-сценариев для бизнеса</h2>
+        
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-blue-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-chart-line text-blue-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Анализ KPI</h3>
+                <p class="text-gray-600">Автоматический сбор данных и подготовка к совещаниям</p>
+            </div>
+            
+            <div class="bg-green-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-dollar-sign text-green-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Финансовый ассистент</h3>
+                <p class="text-gray-600">Мониторинг показателей и выявление отклонений</p>
+            </div>
+            
+            <div class="bg-purple-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-file-invoice-dollar text-purple-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Бюджетные заявки</h3>
+                <p class="text-gray-600">Автоматическое обоснование инвестиций и расчёт ROI</p>
+            </div>
+            
+            <div class="bg-orange-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-balance-scale text-orange-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Сравнение альтернатив</h3>
+                <p class="text-gray-600">Объективный анализ вариантов для закупок</p>
+            </div>
+            
+            <div class="bg-red-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-users text-red-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Коммуникации HR</h3>
+                <p class="text-gray-600">Автоматическая подготовка писем и объявлений</p>
+            </div>
+            
+            <div class="bg-indigo-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-question-circle text-indigo-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">HR Self-Service</h3>
+                <p class="text-gray-600">Автоматические ответы на вопросы сотрудников</p>
+            </div>
+            
+            <div class="bg-teal-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-cogs text-teal-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Улучшение процессов</h3>
+                <p class="text-gray-600">Генерация инициатив для оптимизации операций</p>
+            </div>
+            
+            <div class="bg-yellow-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-exclamation-triangle text-yellow-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Анализ рисков</h3>
+                <p class="text-gray-600">Выявление последствий и мер для снижения рисков</p>
+            </div>
+            
+            <div class="bg-pink-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-comments text-pink-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Анализ обратной связи</h3>
+                <p class="text-gray-600">Выявление настроений и скрытых сигналов</p>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-search text-gray-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Узкие места процессов</h3>
+                <p class="text-gray-600">Автоматическое выявление проблем в производстве</p>
+            </div>
+            
+            <div class="bg-blue-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-wrench text-blue-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Планирование ТОиР</h3>
+                <p class="text-gray-600">Прогнозирование обслуживания на основе данных</p>
+            </div>
+            
+            <div class="bg-green-50 p-6 rounded-lg card-hover">
+                <i class="fas fa-bullhorn text-green-500 text-3xl mb-4"></i>
+                <h3 class="font-bold text-lg mb-2">Маркетинговый анализ</h3>
+                <p class="text-gray-600">Оценка кампаний и генерация новых идей</p>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <p class="text-xl text-gray-700 font-semibold">Готовые инструменты для трансформации каждой функции</p>
+        </div>
+    </div>
+</section>
+
+<!-- Top 5 Scenarios -->
+<section class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Топ-5 самых эффектных AI-сценариев</h2>
+        
+        <div class="grid md:grid-cols-5 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                <div class="text-2xl font-bold text-blue-500 mb-2">ROI: 8:1</div>
+                <h3 class="font-bold text-lg mb-3 text-gray-800">HR-бот</h3>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>Автоматизация 80% типовых запросов</li>
+                    <li>Снижение нагрузки на HR на 70%</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                <div class="text-2xl font-bold text-green-500 mb-2">ROI: 7:1</div>
+                <h3 class="font-bold text-lg mb-3 text-gray-800">Финансовый ассистент</h3>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>Экономия до 8 часов на подготовку к совещанию</li>
+                    <li>Снижение времени сбора данных на 80%</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                <div class="text-2xl font-bold text-purple-500 mb-2">ROI: 6:1</div>
+                <h3 class="font-bold text-lg mb-3 text-gray-800">Производственный анализ</h3>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>Снижение простоев на 15-20%</li>
+                    <li>Выявление причин отклонений в реальном времени</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                <div class="text-2xl font-bold text-orange-500 mb-2">ROI: 5:1</div>
+                <h3 class="font-bold text-lg mb-3 text-gray-800">Ассистент закупок</h3>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>Сравнение альтернатив за минуты вместо дней</li>
+                    <li>Снижение трудозатрат в 2-3 раза</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center card-hover">
+                <div class="text-2xl font-bold text-red-500 mb-2">ROI: 4:1</div>
+                <h3 class="font-bold text-lg mb-3 text-gray-800">Генерация инициатив</h3>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>5-10 проработанных идей за минуты</li>
+                    <li>Выход за рамки традиционных подходов</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <div class="bg-white p-6 rounded-lg shadow-lg inline-block">
+                <p class="text-lg font-semibold text-gray-800">
+                    <i class="fas fa-clock text-blue-500 mr-2"></i>
+                    Время окупаемости проектов внедрения AI-ассистентов составляет от 3 до 12 месяцев
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Detailed Scenarios -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Детальные сценарии внедрения</h2>
+        
+        <!-- Financial Assistant -->
+        <div class="mb-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8">
+            <h3 class="text-3xl font-bold mb-8 text-gray-800 flex items-center">
+                <i class="fas fa-chart-bar text-green-500 mr-4"></i>
+                Финансовый ассистент: Экономия часов на совещания
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-red-100 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-red-700">До AI</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>80% времени на сбор данных из систем</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Многие часы ручной подготовки отчетов</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Данные могут устаревать к моменту совещания</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Только 20% времени остается на анализ</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-100 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-green-700">С AI</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Автоматический сбор финансовых данных</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Готовый бриф за считанные минуты</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Ответы на вопросы в режиме реального времени</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Фокус на анализе и принятии решений</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-database text-blue-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Сбор данных</h5>
+                    <p class="text-sm text-gray-600">Автоматически извлекает данные из ERP, Excel, презентаций</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-chart-line text-green-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Анализ</h5>
+                    <p class="text-sm text-gray-600">Генерирует графики, выявляет отклонения, объясняет причины</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-comments text-purple-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Ответы</h5>
+                    <p class="text-sm text-gray-600">Отвечает на вопросы «на лету» по бюджетам и прогнозам</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg">
+                <h5 class="font-bold text-lg mb-2">Результат и эффект:</h5>
+                <p class="text-gray-700 mb-4">Руководитель получает готовый «бриф» за минуты вместо часов. Повышается качество обсуждения — внимание уделяется анализу и принятию решений, а не поиску цифр.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-sm text-gray-600"><i class="fas fa-clock mr-1"></i>Реализуемость: 4-6 недель</span>
+                    <span class="text-sm text-gray-600"><i class="fas fa-code mr-1"></i>GPT-4 + LangChain + Интеграция с финансовыми системами</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Production Assistant -->
+        <div class="mb-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8">
+            <h3 class="text-3xl font-bold mb-8 text-gray-800 flex items-center">
+                <i class="fas fa-industry text-blue-500 mr-4"></i>
+                Производственный ассистент: KPI в реальном времени
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-red-100 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-red-700">До AI</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Ручной анализ отчетов из MES/ERP</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Поиск аномалий занимает часы</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Невозможность видеть скрытые взаимосвязи</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Реакция на проблемы с задержкой</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-100 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-green-700">С AI</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Мониторинг KPI в реальном времени</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Автоматическое выявление отклонений</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Анализ взаимосвязи показателей</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Оперативное реагирование на проблемы</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-eye text-blue-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Мониторинг</h5>
+                    <p class="text-sm text-gray-600">Отслеживает показатели производства 24/7 в режиме реального времени</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-search text-orange-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Выявление</h5>
+                    <p class="text-sm text-gray-600">Автоматически находит отклонения и аномалии в показателях</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-lightbulb text-yellow-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Объяснения</h5>
+                    <p class="text-sm text-gray-600">Генерирует понятные объяснения причин отклонений на естественном языке</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg">
+                <h5 class="font-bold text-lg mb-2">Результат и эффект:</h5>
+                <p class="text-gray-700 mb-4">Руководитель получает оперативное объяснение причин отклонений, а не просто цифры. Управленческие решения принимаются быстрее — сразу видно, на какую линию или смену обратить внимание. В итоге снижаются простои, брак и другие потери.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-sm text-gray-600"><i class="fas fa-clock mr-1"></i>Реализуемость: ~4 недели</span>
+                    <span class="text-sm text-gray-600"><i class="fas fa-code mr-1"></i>GPT-4 + Интеграция с MES/ERP-системами</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- HR Assistant -->
+        <div class="mb-16 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-8">
+            <h3 class="text-3xl font-bold mb-8 text-gray-800 flex items-center">
+                <i class="fas fa-users text-purple-500 mr-4"></i>
+                HR-ассистент: 80% запросов – автоматически
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-red-100 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-red-700">До AI</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>HR-специалисты отвлекаются на рутинные запросы</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Разное качество и время ответов</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Отсутствие поддержки вне рабочих часов</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i>Задержки на регламентные запросы до 1-2 дней</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-100 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-green-700">С AI</h4>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>80% запросов обрабатываются автоматически</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Стандартизированные, точные ответы</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Круглосуточная поддержка 24/7</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Мгновенные ответы на стандартные вопросы</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-question-circle text-blue-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Ответы на вопросы</h5>
+                    <p class="text-sm text-gray-600">Мгновенная информация по политикам, льготам, процедурам</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-bell text-orange-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Напоминания</h5>
+                    <p class="text-sm text-gray-600">Уведомления о дедлайнах и важных HR-событиях</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-file-alt text-green-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">Заполнение форм</h5>
+                    <p class="text-sm text-gray-600">Помощь с документами, шаблонами и заявлениями</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg text-center">
+                    <i class="fas fa-clock text-purple-500 text-2xl mb-2"></i>
+                    <h5 class="font-bold">24/7 доступность</h5>
+                    <p class="text-sm text-gray-600">Круглосуточная поддержка без выходных</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg">
+                <h5 class="font-bold text-lg mb-2">Результат и эффект:</h5>
+                <p class="text-gray-700 mb-4">HR-служба высвобождает до 70% времени для стратегических задач. Сотрудники получают мгновенные ответы в любое время суток, что повышает удовлетворенность и снижает фрустрацию. Стандартизированные ответы обеспечивают единый подход к HR-политикам.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-sm text-gray-600"><i class="fas fa-clock mr-1"></i>Реализуемость: ~4 недели для пилота</span>
+                    <span class="text-sm text-gray-600"><i class="fas fa-code mr-1"></i>GPT-4 + база HR-знаний + интеграция с чат-платформой</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Stack -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">AI-стек для бизнеса: технологии и интеграции</h2>
+        
+        <div class="tech-stack">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4 text-blue-600 flex items-center">
+                    <i class="fas fa-brain mr-2"></i>Языковые модели
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>GPT-4</strong>
+                            <p class="text-sm text-gray-600">Основная модель для генерации</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>GPT-3.5</strong>
+                            <p class="text-sm text-gray-600">Для менее сложных задач</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4 text-purple-600 flex items-center">
+                    <i class="fas fa-link mr-2"></i>Фреймворки интеграции
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-purple-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>LangChain</strong>
+                            <p class="text-sm text-gray-600">Связь LLM с данными компании</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-indigo-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>LlamaIndex</strong>
+                            <p class="text-sm text-gray-600">Индексация корпоративных знаний</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4 text-green-600 flex items-center">
+                    <i class="fas fa-database mr-2"></i>Источники данных
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>Базы данных</strong>
+                            <p class="text-sm text-gray-600">SQL, NoSQL, векторные (FAISS, Milvus)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-teal-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>Документы и знания</strong>
+                            <p class="text-sm text-gray-600">PDF, Word, внутренняя Wiki</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4 text-orange-600 flex items-center">
+                    <i class="fas fa-desktop mr-2"></i>Интерфейсы доставки
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-orange-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>Teams / Slack / Telegram</strong>
+                            <p class="text-sm text-gray-600">Боты в корп. мессенджерах</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-yellow-500 rounded-full mr-3"></div>
+                        <div>
+                            <strong>Power BI / BI-системы</strong>
+                            <p class="text-sm text-gray-600">Дашборды с AI-помощником</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6 rounded-lg shadow-lg inline-block">
+                <p class="text-lg font-semibold">Модульная архитектура позволяет начать с простых сценариев и постепенно наращивать функционал</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Implementation Roadmap -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Дорожная карта внедрения: быстро и по шагам</h2>
+        
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="timeline-item bg-blue-50 p-6 rounded-lg">
+                <div class="text-2xl font-bold text-blue-600 mb-2">1-2 недели</div>
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Быстрый пилот</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Выбор одного простого сценария</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Базовая интеграция с GPT-4</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Чат-интерфейс без интеграции</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item bg-green-50 p-6 rounded-lg">
+                <div class="text-2xl font-bold text-green-600 mb-2">2-4 недели</div>
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Интеграция данных</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Подключение к внутренним системам</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Настройка API и доступов</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Базовая инфраструктура безопасности</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item bg-purple-50 p-6 rounded-lg">
+                <div class="text-2xl font-bold text-purple-600 mb-2">4-8 недель</div>
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Расширение</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i>Запуск 3-5 новых сценариев</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i>Обучение сотрудников</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i>Оптимизация под обратную связь</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item bg-orange-50 p-6 rounded-lg">
+                <div class="text-2xl font-bold text-orange-600 mb-2">2-3 месяца</div>
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Полное внедрение</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Масштабирование на все отделы</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Интеграция всех 12 сценариев</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Продвинутая настройка модели</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-12 bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Стратегия внедрения</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-rocket text-blue-500 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Начать с малого</h4>
+                    <p class="text-gray-600">Быстрый результат повышает вовлеченность</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-layer-group text-green-500 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Последовательное развитие</h4>
+                    <p class="text-gray-600">От простых задач к комплексным</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-chart-line text-purple-500 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Измеримые результаты</h4>
+                    <p class="text-gray-600">Каждый этап должен давать эффект</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ROI Analysis -->
+<section class="py-16 bg-gradient-to-br from-green-50 to-blue-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">ROI и экономический эффект</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <div class="text-5xl font-bold text-blue-500 mb-4">до 80%</div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Экономия времени руководителей</h3>
+                <p class="text-gray-600">Автоматизация типовых запросов</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <div class="text-5xl font-bold text-green-500 mb-4">в 2-3 раза</div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Ускорение принятия решений</h3>
+                <p class="text-gray-600">Быстрый анализ данных и альтернатив</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <div class="text-5xl font-bold text-purple-500 mb-4">-70%</div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Сокращение нагрузки на HR</h3>
+                <p class="text-gray-600">Снижение затрат на рутинные операции</p>
+            </div>
+        </div>
+        
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">Окупаемость инвестиций</h3>
+            <div style="height: 400px;">
+                <canvas id="roiChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Дополнительные эффекты:</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="flex items-start">
+                    <i class="fas fa-lightbulb text-yellow-500 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Повышение качества решений</h4>
+                        <p class="text-gray-600">Более обоснованные и взвешенные управленческие решения</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-cogs text-blue-500 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Стандартизация процессов</h4>
+                        <p class="text-gray-600">Единообразие подходов и снижение ошибок</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-rocket text-green-500 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Рост инновационной активности</h4>
+                        <p class="text-gray-600">Высвобождение времени на стратегические инициативы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recommendations -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Рекомендации по внедрению</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-blue-50 p-8 rounded-lg">
+                <i class="fas fa-play-circle text-blue-500 text-4xl mb-4"></i>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Начать с MVP</h3>
+                <ul class="space-y-3 text-gray-700 mb-4">
+                    <li><i class="fas fa-arrow-right text-blue-500 mr-2"></i>Выберите один простой сценарий с высоким потенциалом</li>
+                    <li><i class="fas fa-arrow-right text-blue-500 mr-2"></i>Запустите прототип за 1-2 недели</li>
+                    <li><i class="fas fa-arrow-right text-blue-500 mr-2"></i>Фокус на быстром доказательстве ценности</li>
+                    <li><i class="fas fa-arrow-right text-blue-500 mr-2"></i>Получите обратную связь от первых пользователей</li>
+                </ul>
+                <div class="bg-blue-100 p-4 rounded">
+                    <strong>Пример:</strong> Начните с HR-ассистента для ответов на типовые вопросы
+                </div>
+            </div>
+            
+            <div class="bg-green-50 p-8 rounded-lg">
+                <i class="fas fa-expand-arrows-alt text-green-500 text-4xl mb-4"></i>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Масштабирование успеха</h3>
+                <ul class="space-y-3 text-gray-700 mb-4">
+                    <li><i class="fas fa-arrow-right text-green-500 mr-2"></i>Выбирайте сценарии с наибольшим ROI</li>
+                    <li><i class="fas fa-arrow-right text-green-500 mr-2"></i>Формализуйте процесс оценки внедрения</li>
+                    <li><i class="fas fa-arrow-right text-green-500 mr-2"></i>Создайте центр компетенций по AI-ассистентам</li>
+                    <li><i class="fas fa-arrow-right text-green-500 mr-2"></i>Документируйте лучшие практики и архитектуру</li>
+                </ul>
+                <div class="bg-green-100 p-4 rounded">
+                    <strong>Пример:</strong> Тиражирование методологии на все департаменты
+                </div>
+            </div>
+            
+            <div class="bg-purple-50 p-8 rounded-lg">
+                <i class="fas fa-puzzle-piece text-purple-500 text-4xl mb-4"></i>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Интеграция в процессы</h3>
+                <ul class="space-y-3 text-gray-700 mb-4">
+                    <li><i class="fas fa-arrow-right text-purple-500 mr-2"></i>Встраивайте в существующие инструменты (Teams, BI)</li>
+                    <li><i class="fas fa-arrow-right text-purple-500 mr-2"></i>Дополняйте рабочие процессы, не заменяя их полностью</li>
+                    <li><i class="fas fa-arrow-right text-purple-500 mr-2"></i>Минимизируйте изменение привычек пользователей</li>
+                    <li><i class="fas fa-arrow-right text-purple-500 mr-2"></i>Обеспечьте единый интерфейс для всех AI-сервисов</li>
+                </ul>
+                <div class="bg-purple-100 p-4 rounded">
+                    <strong>Пример:</strong> Интеграция финансового ассистента в Power BI
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">Критические факторы успеха</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-shield-alt text-red-500 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Безопасность</h4>
+                    <p class="text-gray-600">Конфиденциальность и защита данных</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-graduation-cap text-blue-500 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Обучение</h4>
+                    <p class="text-gray-600">Подготовка пользователей</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-chart-bar text-green-500 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Измеримость</h4>
+                    <p class="text-gray-600">Точная оценка эффекта</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-arrow-up text-purple-500 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-lg mb-2">Развитие</h4>
+                    <p class="text-gray-600">Непрерывное улучшение AI</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Conclusion -->
+<section class="py-16 gradient-bg text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">Заключение</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-check-circle mr-3"></i>
+                    Готовность технологий
+                </h3>
+                <ul class="space-y-2 text-sm">
+                    <li>GPT-4 и LangChain готовы для корпоративного применения</li>
+                    <li>Доступные API и интеграции с бизнес-системами</li>
+                    <li>Работа на русском языке без дополнительного обучения</li>
+                    <li>Развёртывание в облаке или локальной инфраструктуре</li>
+                </ul>
+                <div class="mt-4 text-center">
+                    <div class="text-2xl font-bold">Технологическая зрелость: высокая</div>
+                </div>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-chart-line mr-3"></i>
+                    Практические результаты
+                </h3>
+                <ul class="space-y-2 text-sm">
+                    <li>Экономия времени руководителей: 50–80%</li>
+                    <li>Автоматизация HR-запросов: до 70%</li>
+                    <li>Ускорение анализа альтернатив: с дней до минут</li>
+                    <li>Повышение качества и обоснованности решений</li>
+                </ul>
+                <div class="mt-4 text-center">
+                    <div class="text-2xl font-bold">ROI: 2-3х в первый год</div>
+                </div>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-road mr-3"></i>
+                    Этапы внедрения
+                </h3>
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-xs font-bold mr-3">1</div>
+                        <div>
+                            <strong>Пилотный проект (1-2 недели)</strong>
+                            <p>Быстрый запуск с одним сценарием</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-xs font-bold mr-3">2</div>
+                        <div>
+                            <strong>Интеграция (4-6 недель)</strong>
+                            <p>Подключение к источникам данных</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-xs font-bold mr-3">3</div>
+                        <div>
+                            <strong>Масштабирование (2-3 месяца)</strong>
+                            <p>Расширение на все отделы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 p-8 rounded-lg text-center">
+            <h3 class="text-3xl font-bold mb-4">Ключевой вывод</h3>
+            <p class="text-xl mb-4">AI-ассистенты позволяют руководителям сместить фокус от рутинных операций к стратегической работе. Технологии готовы к внедрению уже сейчас, с минимальными рисками и быстрой окупаемостью инвестиций.</p>
+            <div class="mt-6">
+                <i class="fas fa-lightbulb text-yellow-300 text-2xl mr-2"></i>
+                <span class="text-lg font-semibold">Основано на анализе 12 практических сценариев применения AI</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+        <p class="text-lg">&copy; 2025 AI-Ассистенты для Руководителей. Практическое руководство по внедрению.</p>
+        <p class="text-gray-400 mt-2">Трансформируйте свой бизнес с помощью искусственного интеллекта</p>
+    </div>
+</footer>
+
+<script>
+// ROI Chart
+const ctx = document.getElementById('roiChart').getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['HR-бот', 'Финансовый ассистент', 'Производственный анализ', 'Ассистент закупок', 'Генерация инициатив'],
+        datasets: [{
+            label: 'ROI (соотношение)',
+            data: [8, 7, 6, 5, 4],
+            backgroundColor: [
+                'rgba(59, 130, 246, 0.8)',
+                'rgba(16, 185, 129, 0.8)',
+                'rgba(139, 92, 246, 0.8)',
+                'rgba(245, 158, 11, 0.8)',
+                'rgba(239, 68, 68, 0.8)'
+            ],
+            borderColor: [
+                'rgba(59, 130, 246, 1)',
+                'rgba(16, 185, 129, 1)',
+                'rgba(139, 92, 246, 1)',
+                'rgba(245, 158, 11, 1)',
+                'rgba(239, 68, 68, 1)'
+            ],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: 'ROI по AI-сценариям (окупаемость в первый год)',
+                font: {
+                    size: 16,
+                    weight: 'bold'
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'ROI (x:1)'
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'AI-сценарии'
+                }
+            }
+        }
+    }
+});
+
+// Smooth scrolling for any navigation links (if added)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Add fade-in animation on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe all sections for animation
+document.querySelectorAll('section').forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(20px)';
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(section);
+});
+
+// Make first section immediately visible
+document.querySelector('section').style.opacity = '1';
+document.querySelector('section').style.transform = 'translateY(0)';
+</script>
+
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDqzNt36qnD1bjdhU9TsfEgCHSdnJYq9BnIudy8D%2FGKuLFor%2BpS3ocR3BTABYVbrhzzhNq9fPLy%2BoOF5f1gCWtMu%2F13OpXuaHC%2Bc33At2RweXZW%2Fgb0%2F9QyN%2F1uBX5VGPqfI%2B0%2FkPEWG%2FcBjjCULwsR%2BNF2iCq3yUzzddeUapmhSa74JoSu8e33Agm0xXI4p%2FYBdAYKfgZiZpSOodzec3WBqFTkdT3RKX2vtA6S2OazqIqh7ESuFESO7GZNE7ufbthvkL6zgZs5TzxFxQxuigYHs%2F86PbKLuQ8kkhAYelwMaIccSmFOAwwDZcwRNW4Zf5mk4vGx1N5YUQNVf%2B9dGjEHe%2FwOexXatckzHiIZbycZbAPDU%2BYXkKTnTTBfNbJ8UXggjXJ2aHzOauzxlIYWY8HK2vscw8BTlA9%2FBcTe2Qqmde9%2FguF9Lf1lA0wyCRRNYM4EeX5yTWhFThU0TvEait0uhWFBTUTl%2B0X1K8%2BuRlA7vcBVcW8hK8f1b6%2Byvd7fFq2wzBYEUcf2SqySSmhdReyPM%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDqzNt36qnD1bjdhU9TsfEgCHSdnJYq9BnIudy8D/GKuLFor+pS3ocR3BTABYVbrhzzhNq9fPLy+oOF5f1gCWtMu/13OpXuaHC+c33At2RweXZW/gb0/9QyN/1uBX5VGPqfI+0/kPEWG/cBjjCULwsR+NF2iCq3yUzzddeUapmhSa74JoSu8e33Agm0xXI4p/YBdAYKfgZiZpSOodzec3WBqFTkdT3RKX2vtA6S2OazqIqh7ESuFESO7GZNE7ufbthvkL6zgZs5TzxFxQxuigYHs/86PbKLuQ8kkhAYelwMaIccSmFOAwwDZcwRNW4Zf5mk4vGx1N5YUQNVf+9dGjEHe/wOexXatckzHiIZbycZbAPDU+YXkKTnTTBfNbJ8UXggjXJ2aHzOauzxlIYWY8HK2vscw8BTlA9/BcTe2Qqmde9/guF9Lf1lA0wyCRRNYM4EeX5yTWhFThU0TvEait0uhWFBTUTl+0X1K8+uRlA7vcBVcW8hK8f1b6+yvd7fFq2wzBYEUcf2SqySSmhdReyPM=";
+    </script>
+    
+        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
+        
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
