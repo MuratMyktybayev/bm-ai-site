@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM.AI Management</title>
+    <meta name="description" content="Уменьшите рутину. Увеличьте результат. С помощью AI. AI берёт рутину. Вы — управление и рост. Без хайпа. С результатом. Только решения, которые реально экономят время и ресурсы.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --deep-blue: #1a365d;
+            --deep-blue-light: #2c5282;
+            --deep-sea: #004d40;
+            --deep-sea-light: #00695c;
+            --emerald: #065f46;
+            --emerald-light: #047857;
+            --dark-gray: #2d3748;
+            --light-gray: #4a5568;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--deep-sea) 50%, var(--emerald) 100%);
+        }
+        
+        .gradient-card {
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.05) 0%, rgba(0, 77, 64, 0.05) 50%, rgba(6, 95, 70, 0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--deep-sea) 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--deep-blue-light) 0%, var(--deep-sea-light) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--emerald) 0%, var(--emerald-light) 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, var(--emerald-light) 0%, var(--deep-sea) 100%);
+            transform: translateY(-2px);
+        }
+        
+        .navbar-fixed {
+            background: rgba(26, 54, 93, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--emerald) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="smooth-scroll bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="navbar-fixed fixed w-full z-50 px-4 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-bold text-2xl">BM.AI Management</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#card-rt98et5dlhfvovw" class="text-white hover:text-blue-200 transition-colors duration-300">Решения</a>
+                <a href="#card-gexp8p9n1z5jyeb" class="text-white hover:text-blue-200 transition-colors duration-300">Преимущества</a>
+                <a href="#card-vwjuk3pkrow1ieq" class="text-white hover:text-blue-200 transition-colors duration-300">Кейсы</a>
+                <a href="#card-yc0kra4z9f11mm8" class="text-white hover:text-blue-200 transition-colors duration-300">Тарифы</a>
+                <a href="#card-rw4jlr6j375a6u1" class="text-white hover:text-blue-200 transition-colors duration-300">FAQ</a>
+                <a href="#card-4lp4zod3ss0061n" class="btn-secondary text-white px-6 py-2 rounded-full font-medium">Контакты</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden mt-4">
+            <div class="flex flex-col space-y-4 px-4">
+                <a href="#card-rt98et5dlhfvovw" class="text-white hover:text-blue-200">Решения</a>
+                <a href="#card-gexp8p9n1z5jyeb" class="text-white hover:text-blue-200">Преимущества</a>
+                <a href="#card-vwjuk3pkrow1ieq" class="text-white hover:text-blue-200">Кейсы</a>
+                <a href="#card-yc0kra4z9f11mm8" class="text-white hover:text-blue-200">Тарифы</a>
+                <a href="#card-rw4jlr6j375a6u1" class="text-white hover:text-blue-200">FAQ</a>
+                <a href="#card-4lp4zod3ss0061n" class="text-white hover:text-blue-200">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 pulse-animation">BM.AI Management</h1>
+            <h2 class="text-2xl md:text-4xl font-medium mb-8">Уменьшите рутину. Увеличьте результат.<br>С помощью AI.</h2>
+            <p class="text-lg md:text-xl mb-12 opacity-90 max-w-3xl mx-auto">AI берёт рутину. Вы — управление и рост. Без хайпа. С результатом. Только решения, которые реально экономят время и ресурсы.</p>
+            <a href="#card-rt98et5dlhfvovw" class="btn-secondary text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center">
+                Узнать больше <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">Кто уже сегодня может использовать AI как рычаг для высвобождения времени и ресурсов?</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3" style="color: var(--deep-blue)">Финансовые директоры, руководители маркетинга/продаж, закупки/снабжение</h3>
+                    <p class="text-gray-600">Автоматизация анализа данных, планирования, отчетности и бюджетов, анализа поставщиков и предложений, подготовка презентаций.</p>
+                </div>
+                
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3" style="color: var(--emerald)">HR, Юристы и Админ поддержка</h3>
+                    <p class="text-gray-600">Автоматизация учета и анализа кадров, оценка персонала, подготовка приказов и договоров, контроль документооборота, управление базами знаний.</p>
+                </div>
+                
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3" style="color: var(--deep-sea)">Производственники, ТОиР, ТБиОТ, Контроль качества</h3>
+                    <p class="text-gray-600">Ускорение диагностики, автоматизация анализа данных по ремонтам, производственной отчетности, учету отклонений, контролю KPI и качества, анализу ТБиОТ.</p>
+                </div>
+                
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-crown text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3" style="color: var(--emerald)">Генеральные директоры и топ-менеджеры</h3>
+                    <p class="text-gray-600">Углубленная подготовка к совещаниям, анализ больших данных, оценка эффективности, создание презентаций, быстрое принятие обоснованных решений.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="card-rt98et5dlhfvovw" class="py-20 px-4" style="background: linear-gradient(135deg, rgba(26, 54, 93, 0.02) 0%, rgba(6, 95, 70, 0.02) 100%)">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">Что мы предлагаем?</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-blue)">AI Обучение</h3>
+                    <p class="text-gray-600 mb-6">Обучающие модули, практические занятия и сопровождение первых шагов в области AI. От 2 до 40 часов — в зависимости от уровня зрелости и запроса.</p>
+                    <a href="https://bmai-management.com/aieducation.html" target="_blank" rel="noopener noreferrer" class="btn-primary text-white px-6 py-3 rounded-full font-medium inline-flex items-center">
+                        Узнать больше <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--emerald)">Разработка AI Асисстентов и Промпт-Инжиниринг</h3>
+                    <p class="text-gray-600 mb-6">Разработка AI Ассистентов и сложных промптов для автоматизации повторяющихся, рутинных задач (финансы, HR, маркетинг/продажи, закупки/снабжение, юриспруденция, производство, ТОиР, адм. поддержка и т.д.).</p>
+                    <a href="https://bmai-management.com/aiasstsandprompts.html" target="_blank" rel="noopener noreferrer" class="btn-secondary text-white px-6 py-3 rounded-full font-medium inline-flex items-center">
+                        Узнать больше <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-sea)">Разработка AI ботов</h3>
+                    <p class="text-gray-600 mb-6">Разработка диалоговых AI-ботов — текстовых и голосовых — для взаимодействия с большим количеством клиентов по типовым задачам и вопросам (маркетинг/продажи, закупки/снабжение, HR, админ. и тех. поддержка).</p>
+                    <a href="https://bmai-management.com/ai_bots_webpage.html" target="_blank" rel="noopener noreferrer" class="btn-primary text-white px-6 py-3 rounded-full font-medium inline-flex items-center">
+                        Узнать больше <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--emerald)">Диагностика бизнеса и внедрение AI решений</h3>
+                    <p class="text-gray-600 mb-6">Диагностика функций, оценка AI зрелости процессов, определение слабых мест. Стратегия и план внедрения AI на точках максимального эффекта.</p>
+                    <a href="https://bmai-management.com/diagnostics.html" target="_blank" rel="noopener noreferrer" class="btn-secondary text-white px-6 py-3 rounded-full font-medium inline-flex items-center">
+                        Узнать больше <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-blue)">Разработка стратегических документов и бизнес-планов с AI</h3>
+                    <p class="text-gray-600 mb-6">Ускоренная разработка полноценных стратегий, бизнес-планов, регламентов и трансформационных документов с применением AI-архитектора: быстро, качественно, продуманно, на языке бизнеса.</p>
+                    <a href="https://bmai-management.com/stradocs.html" target="_blank" rel="noopener noreferrer" class="btn-primary text-white px-6 py-3 rounded-full font-medium inline-flex items-center">
+                        Узнать больше <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-tie text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-sea)">AI Помощник Руководителя</h3>
+                    <p class="text-gray-600 mb-6">AI для управленцев: подготовка к совещаниям, согласования, генерация сценариев решений — всё в одном интерфейсе.</p>
+                    <a href="https://bmai-management.com/ceoassist.html" target="_blank" rel="noopener noreferrer" class="btn-secondary text-white px-6 py-3 rounded-full font-medium inline-flex items-center">
+                        Узнать больше <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift md:col-span-2 lg:col-span-3">
+                    <div class="flex items-start">
+                        <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-6 mr-6 flex-shrink-0">
+                            <i class="fas fa-chart-bar text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-2xl mb-4" style="color: var(--emerald)">Проведение глубоких исследований различных областей/направлений с AI</h3>
+                            <p class="text-gray-600 mb-6">Аналитические исследования на основе количественных и качественных показателей различной глубины и направленности: от финансового анализа состояния бизнеса и оценки различных функциональных направлений до изучения корпоративной культуры и социальной устойчивости.</p>
+                            <a href="https://bmai-management.com/businessresearch.html" target="_blank" rel="noopener noreferrer" class="btn-primary text-white px-6 py-3 rounded-full font-medium inline-flex items-center">
+                                Узнать больше <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gradient">Как это работает и что вы получите</h2>
+            <p class="text-center text-gray-600 mb-16 text-lg">Наши решения приводят к экономии времени на рутинных операциях до 70%, повышению качества принимаемых решений, снижению операционных ошибок. Доступ осуществляется через привычные инструменты (Notion, Telegram, Google Docs) с постоянным сопровождением и обратной связью.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 btn-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--deep-blue)">Быстрая диагностика задач → подбор ассистента</h3>
+                    <p class="text-gray-600">Мы начинаем с глубокого анализа ваших текущих процессов и задач, чтобы точно определить, где AI может принести наибольшую пользу. На основе этого мы подбираем или создаем подходящего AI-ассистента, оптимизированного под ваши уникальные потребности.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 btn-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--emerald)">Прототипирование → адаптация под роли</h3>
+                    <p class="text-gray-600">Создаем прототип AI-решения, который адаптируется под специфические роли и функции в вашей компании. Это позволяет сотрудникам быстро освоить новый инструмент и увидеть его преимущества на практике.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 btn-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--deep-sea)">Тестирование → внедрение → масштабирование</h3>
+                    <p class="text-gray-600">После тщательного тестирования и доработки мы переходим к полноценному внедрению. Успешные пилотные проекты масштабируются на всю компанию, обеспечивая максимальный охват и эффективность.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section id="card-gexp8p9n1z5jyeb" class="py-20 px-4" style="background: linear-gradient(135deg, rgba(6, 95, 70, 0.02) 0%, rgba(26, 54, 93, 0.02) 100%)">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gradient">Преимущества</h2>
+            <p class="text-center text-gray-600 mb-16 text-lg">Мы понимаем бизнес и применяем AI там, где он действительно даёт эффект.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gradient-card p-8 rounded-xl hover-lift text-center">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-calendar-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-blue)">20+ лет опыта</h3>
+                    <p class="text-gray-600">В управленческом консалтинге, финансах, операционной трансформации. Наша глубокая экспертиза гарантирует, что мы видим полную картину вашего бизнеса.</p>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift text-center">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--emerald)">10+ крупных компаний</h3>
+                    <p class="text-gray-600">Мы успешно работали с более чем десятью крупными компаниями, внедряя инновационные решения и добиваясь измеримых результатов, что подтверждает наш опыт.</p>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift text-center">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clipboard-list text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-sea)">Собственная методология</h3>
+                    <p class="text-gray-600">Разработали и успешно применяем собственную методологию «Целевых моделей», которая обеспечивает четкий и эффективный подход к внедрению AI.</p>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift text-center">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--emerald)">GPT как инструмент</h3>
+                    <p class="text-gray-600">Превратили GPT в рабочий инструмент, а не игрушку для демонстраций. Мы фокусируемся на практическом применении AI для решения реальных бизнес-задач.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases -->
+    <section id="card-vwjuk3pkrow1ieq" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gradient">Кейсы</h2>
+            <p class="text-center text-gray-600 mb-16 text-lg">(опыт и реализованные задачи)</p>
+            <h3 class="text-2xl font-semibold text-center mb-12" style="color: var(--deep-blue)">Уже сделали проще:</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-wrench text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-blue)">Оптимизация ТОиР</h3>
+                    <p class="text-gray-600">Внедрили AI-ассистента для согласования подрядов в ТОиР, что привело к экономии 18 часов в неделю. Это позволило значительно ускорить процессы и сократить рутинные операции.</p>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-secondary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users-cog text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--emerald)">Цифровизация HR</h3>
+                    <p class="text-gray-600">Создали стратегию цифровизации HR за 7 дней вместо 3 месяцев. Это ускорило принятие решений и повысило эффективность управления человеческими ресурсами.</p>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="w-16 h-16 btn-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-sea)">Помощь руководителю</h3>
+                    <p class="text-gray-600">Подготовили управленца к стратегическому совещанию за 45 минут с генерацией сценариев и чек-листов. AI стал незаменимым инструментом для быстрого и качественного анализа.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="card-yc0kra4z9f11mm8" class="py-20 px-4" style="background: linear-gradient(135deg, rgba(26, 54, 93, 0.02) 0%, rgba(6, 95, 70, 0.02) 100%)">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">Тарифы</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="text-center mb-8">
+                        <h3 class="font-bold text-3xl mb-4" style="color: var(--deep-blue)">Lite</h3>
+                        <div class="text-4xl font-bold mb-2" style="color: var(--deep-blue)">от $300</div>
+                    </div>
+                    <p class="text-gray-600 mb-8">Тестовый ассистент под 1 задачу — от $300. Отличный способ начать знакомство с возможностями AI и оценить его потенциал в ваших процессах.</p>
+                    <a href="#card-4lp4zod3ss0061n" class="btn-primary text-white px-8 py-3 rounded-full font-medium w-full text-center block">
+                        Выбрать план
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="btn-secondary text-white px-4 py-2 rounded-full text-sm font-semibold">Популярный</span>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="font-bold text-3xl mb-4" style="color: var(--emerald)">Pro</h3>
+                        <div class="text-4xl font-bold mb-2" style="color: var(--emerald)">от $900</div>
+                    </div>
+                    <p class="text-gray-600 mb-8">Кастомное решение под отдел + внедрение — от $900. Идеально для команд, желающих автоматизировать специфические функции и повысить эффективность на уровне департамента.</p>
+                    <a href="#card-4lp4zod3ss0061n" class="btn-secondary text-white px-8 py-3 rounded-full font-medium w-full text-center block">
+                        Выбрать план
+                    </a>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift">
+                    <div class="text-center mb-8">
+                        <h3 class="font-bold text-3xl mb-4" style="color: var(--deep-sea)">Enterprise</h3>
+                        <div class="text-4xl font-bold mb-2" style="color: var(--deep-sea)">от $2500</div>
+                    </div>
+                    <p class="text-gray-600 mb-8">Стратегия + внедрение + обучение — от $2500. Комплексное решение для крупных компаний, стремящихся к полной AI-трансформации с индивидуальным подходом и обучением команды.</p>
+                    <a href="#card-4lp4zod3ss0061n" class="btn-primary text-white px-8 py-3 rounded-full font-medium w-full text-center block">
+                        Выбрать план
+                    </a>
+                </div>
+            </div>
+            
+            <p class="text-center text-lg mt-12 text-gray-600">Стартуйте с пилота — масштабируйте уверенно. Выберите подходящий тариф и начните трансформировать свои рабочие процессы с помощью искусственного интеллекта.</p>
+        </div>
+    </section>
+
+    <!-- Guarantees -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">Гарантии и поддержка</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gradient-card p-8 rounded-xl hover-lift text-center">
+                    <div class="w-20 h-20 btn-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">100%</span>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-blue)">Возврат средств</h3>
+                    <p class="text-gray-600">Если вы не получите измеримого результата в течение 30 дней, мы гарантируем полный возврат средств. Мы уверены в эффективности наших решений.</p>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift text-center">
+                    <div class="w-20 h-20 btn-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-lg font-bold">24/7</span>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--emerald)">Поддержка</h3>
+                    <p class="text-gray-600">Наша команда поддержки доступна круглосуточно через Telegram, чтобы оперативно ответить на все ваши вопросы и решить возникающие проблемы.</p>
+                </div>
+                
+                <div class="gradient-card p-8 rounded-xl hover-lift text-center">
+                    <div class="w-20 h-20 btn-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-3xl font-bold">0</span>
+                    </div>
+                    <h3 class="font-bold text-2xl mb-4" style="color: var(--deep-sea)">Внедрений "в никуда"</h3>
+                    <p class="text-gray-600">Мы гарантируем только измеримый эффект. Никаких внедрений ради внедрений — только реальная польза для вашего бизнеса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="card-rw4jlr6j375a6u1" class="py-20 px-4" style="background: linear-gradient(135deg, rgba(6, 95, 70, 0.02) 0%, rgba(26, 54, 93, 0.02) 100%)">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">FAQ</h2>
+            
+            <div class="space-y-6">
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--deep-blue)">«А если нет AI-команды?»</h3>
+                    <p class="text-gray-600">Вам не нужна собственная AI-команда. Наши решения работают «из коробки» и не требуют от вас специализированных знаний или дополнительных ресурсов. Мы обеспечим полное сопровождение.</p>
+                </div>
+                
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--emerald)">«Мы уже пробовали — не сработало»</h3>
+                    <p class="text-gray-600">Многие сталкиваются с этим. Причина часто кроется в отсутствии зрелой методологии и стратегического подхода. У нас есть проверенная методология, которая обеспечивает реальный эффект и масштабируемость.</p>
+                </div>
+                
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--deep-sea)">«Сколько стоит внедрение?»</h3>
+                    <p class="text-gray-600">Мы начинаем с MVP (минимально жизнеспособного продукта), чтобы быстро показать вам ценность и ROI (окупаемость инвестиций). Это позволяет оптимизировать затраты и поэтапно наращивать функционал.</p>
+                </div>
+                
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--deep-blue)">«Какой эффект будет?»</h3>
+                    <p class="text-gray-600">Наши решения обеспечивают значительную экономию времени, повышение качества принимаемых решений, снижение операционного стресса для вашей команды и более эффективное использование ресурсов.</p>
+                </div>
+                
+                <div class="gradient-card p-6 rounded-xl hover-lift">
+                    <h3 class="font-bold text-xl mb-4" style="color: var(--emerald)">«Это безопасно?»</h3>
+                    <p class="text-gray-600">Безопасность данных — наш приоритет. Доступ, приватность и контроль данных полностью остаются на стороне клиента, с соблюдением всех необходимых протоколов безопасности.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="card-4lp4zod3ss0061n" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gradient">Начните трансформацию своего бизнеса с BM AI Management прямо сейчас!</h2>
+                <p class="text-xl text-gray-600">Заполните форму ниже для получения бесплатной консультации или свяжитесь с нами напрямую.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="gradient-card p-8 rounded-xl">
+                    <h3 class="font-bold text-2xl mb-8" style="color: var(--deep-blue)">Позвоните нам по телефону</h3>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 btn-primary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold" style="color: var(--deep-blue)">Мурат Мыктыбаев</p>
+                                <p class="text-gray-600">+7 (701) 799-96-45</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 btn-secondary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold" style="color: var(--emerald)">Баходир Акбаров</p>
+                                <p class="text-gray-600">+7 (705) 466-35-62</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 btn-primary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold" style="color: var(--deep-sea)">Email</p>
+                                <p class="text-gray-600">management.bm.ai@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="gradient-card p-8 rounded-xl">
+                    <h3 class="font-bold text-2xl mb-8" style="color: var(--emerald)">Свяжитесь с нами</h3>
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeOo6U4T_MInef4qkNt4eNORjo9rlZtUzdpzNWIfzJRlTEqAA/viewform?embedded=true" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"
+                        class="rounded-lg">
+                        Загрузка…
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12 px-4">
+        <div class="container mx-auto max-w-6xl text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-4">BM.AI Management</h3>
+                <p class="text-lg opacity-90">AI берёт рутину. Вы — управление и рост.</p>
+            </div>
+            
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="#card-rt98et5dlhfvovw" class="hover:text-blue-200 transition-colors">Решения</a>
+                <a href="#card-gexp8p9n1z5jyeb" class="hover:text-blue-200 transition-colors">Преимущества</a>
+                <a href="#card-vwjuk3pkrow1ieq" class="hover:text-blue-200 transition-colors">Кейсы</a>
+                <a href="#card-yc0kra4z9f11mm8" class="hover:text-blue-200 transition-colors">Тарифы</a>
+                <a href="#card-rw4jlr6j375a6u1" class="hover:text-blue-200 transition-colors">FAQ</a>
+                <a href="#card-4lp4zod3ss0061n" class="hover:text-blue-200 transition-colors">Контакты</a>
+            </div>
+            
+            <div class="border-t border-white/20 pt-8">
+                <p class="opacity-75">&copy; 2024 BM.AI Management. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(26, 54, 93, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(26, 54, 93, 0.95)';
+            }
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all cards for animation
+        document.querySelectorAll('.hover-lift, .gradient-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDrUdQhs5YtdsMyPfdyXL7IqE3VbWQurqWCIIsX8bdY%2Bf%2FPyhf%2FESlVizy9KpdFi0XC0oUMqKRgYjZCEVMFqRnajqj2uQWS1JiODk87dc6EyB7c6LryOHL876OiQ8KArqQISQhLsc4%2BlzokdhfadQL5Hv%2BIxQ9bscEgx1VPh1L0VhTMriqQPbdmm3YBKHB6IMUjjsFczR3w1Yj6fO6drNVs3qFC7qeZ5LkDxDgZQyKwy%2FnTAXmT7YZJECgg%2FaqBG%2FRjms%2BZBu4M8EkEDFhw37HxlPntAKtXui2Yegt%2B%2FHGmJSpjViCn9XhSnHK%2FjsBp8l9ZdMbkmwXG5e6LwHEkuSFrYnSTJTSjjkNT9MiRmv7%2FbTvU5N6G7kG17PofO5wVCza0mvMH0nt2wybD6dzI3a5BKmaXRhpLtwPF4ZEIuwIyIRnGXhCPNgQwrc1khuXkLM2H8SbYDfciNtKPPZmZDhQyvOnzp9D8cF0O%2B8ks26TrdGTaEXrxV%2Be6NAIVGPA9yfdQ%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDrUdQhs5YtdsMyPfdyXL7IqE3VbWQurqWCIIsX8bdY+f/Pyhf/ESlVizy9KpdFi0XC0oUMqKRgYjZCEVMFqRnajqj2uQWS1JiODk87dc6EyB7c6LryOHL876OiQ8KArqQISQhLsc4+lzokdhfadQL5Hv+IxQ9bscEgx1VPh1L0VhTMriqQPbdmm3YBKHB6IMUjjsFczR3w1Yj6fO6drNVs3qFC7qeZ5LkDxDgZQyKwy/nTAXmT7YZJECgg/aqBG/Rjms+ZBu4M8EkEDFhw37HxlPntAKtXui2Yegt+/HGmJSpjViCn9XhSnHK/jsBp8l9ZdMbkmwXG5e6LwHEkuSFrYnSTJTSjjkNT9MiRmv7/bTvU5N6G7kG17PofO5wVCza0mvMH0nt2wybD6dzI3a5BKmaXRhpLtwPF4ZEIuwIyIRnGXhCPNgQwrc1khuXkLM2H8SbYDfciNtKPPZmZDhQyvOnzp9D8cF0O+8ks26TrdGTaEXrxV+e6NAIVGPA9yfdQ==";
+    </script>
+    
+        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
+        
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
